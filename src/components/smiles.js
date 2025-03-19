@@ -23,6 +23,7 @@ class Smiles extends Component {
         const defaultValues = this.state.emojis.map((el) => {
             return {...el, count: 0};
         });
+        localStorage.setItem("emojis", JSON.stringify(defaultValues));
         this.setState({emojis: defaultValues});
     }
 
