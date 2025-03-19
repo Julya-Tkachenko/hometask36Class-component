@@ -16676,6 +16676,7 @@ var Smiles = /*#__PURE__*/function (_Component) {
           count: 0
         });
       });
+      localStorage.setItem("emojis", JSON.stringify(defaultValues));
       _this.setState({
         emojis: defaultValues
       });
